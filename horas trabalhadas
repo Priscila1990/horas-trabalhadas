@@ -1,0 +1,22 @@
+package scanneremprestimo;
+import java.util.Scanner;
+public class emprestimoScanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner scan= new Scanner(System.in);
+ System.out.println("Qual o valor do emprestimo");
+ double valorEmprestado= scan.nextDouble();
+ System.out.println("Qual a taxa de juros mensal");
+ double taxaJuros= scan.nextDouble();
+ System.out.println("Digite o numero de meses do emprestimo");
+ int qtdmeses= scan.nextInt();
+ double valortotal=valorEmprestado*(taxaJuros*100)*qtdmeses;
+ double valordaParcela= valortotal/qtdmeses;
+ System.out.println("O valor total com juros é: "+ valortotal);
+  System.out.println("O valor total das parcelas é:" + valordaParcela);
+ 
+ 
+	}
+
+}
